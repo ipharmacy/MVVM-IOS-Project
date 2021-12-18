@@ -37,7 +37,7 @@ class ProductViewModel {
     }
     
     private func fetchProducts() {
-                
+        
         productService.fetchProducts {[weak self] (products) in
             DispatchQueue.main.async {
                 self?.products = products
